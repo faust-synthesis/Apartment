@@ -48,14 +48,17 @@ Wadinclude list :
 CreateBrush:
  (0.00 seconds)
 CSGBrush:
- (0.01 seconds)
+ (0.02 seconds)
 
+added 3 additional animating textures.
 Using Wadfile: /program files (x86)/steam/steamapps/common/Half-Life/valve/halflife.wad
- - Contains 3 used textures, 100.00 percent of map (3116 textures in wad)
+ - Contains 12 used textures, 92.31 percent of map (3116 textures in wad)
+Using Wadfile: /program files (x86)/steam/steamapps/common/Half-Life/valve/xeno.wad
+ - Contains 1 used texture, 7.69 percent of map (264 textures in wad)
 
-Wad files required to run the map: "halflife.wad;"
-Texture usage is at 0.07 mb (of 32.00 mb MAX)
-0.02 seconds elapsed
+Wad files required to run the map: "halflife.wad;xeno.wad;"
+Texture usage is at 0.18 mb (of 32.00 mb MAX)
+0.06 seconds elapsed
 
 -----   END   hlcsg -----
 
@@ -95,42 +98,42 @@ max node size       [    1024 ] [    1024 ] (Min 64) (Max 65536)
 remove hull 2       [     off ] [     off ]
 
 
-SolidBSP [hull 0] 25 (0.00 seconds)
+SolidBSP [hull 0] 108 (0.00 seconds)
 BSP generation successful, writing portal file 'C:\Program Files (x86)\Steam\steamapps\common\Half-Life\apartment\maps\emptyroom.prt'
-SolidBSP [hull 1] 29 (0.00 seconds)
-SolidBSP [hull 2] 29 (0.00 seconds)
-SolidBSP [hull 3] 29 (0.00 seconds)
-Reduced 18 clipnodes to 18
-Reduced 9 texinfos to 4
-Reduced 3 texdatas to 3 (136 bytes to 136)
-Reduced 96 planes to 20
+SolidBSP [hull 1] 119 (0.00 seconds)
+SolidBSP [hull 2] 95 (0.02 seconds)
+SolidBSP [hull 3] 162 (0.02 seconds)
+Reduced 203 clipnodes to 176
+Reduced 86 texinfos to 40
+Reduced 13 texdatas to 13 (576 bytes to 576)
+Reduced 530 planes to 119
 FixBrinks:
-Increased 18 clipnodes to 18.
+Increased 176 clipnodes to 176.
 
 Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
 ------------  ---------------  ---------------  --------
 models              1/512           64/32768    ( 0.2%)
-planes             20/32768        400/655360   ( 0.1%)
-vertexes           40/65535        480/786420   ( 0.1%)
-nodes               6/32767        144/786408   ( 0.0%)
-texinfos            4/32767        160/1310680  ( 0.0%)
-faces              30/65535        600/1310700  ( 0.0%)
-* worldfaces       30/32768          0/0        ( 0.1%)
-clipnodes          18/32767        144/262136   ( 0.1%)
-leaves              2/32760         56/917280   ( 0.0%)
-* worldleaves       1/8192           0/0        ( 0.0%)
-marksurfaces       30/65535         60/131070   ( 0.0%)
-surfedges         136/512000       544/2048000  ( 0.0%)
-edges              69/256000       276/1024000  ( 0.0%)
-texdata          [variable]        136/33554432 ( 0.0%)
+planes            119/32768       2380/655360   ( 0.4%)
+vertexes          304/65535       3648/786420   ( 0.5%)
+nodes              62/32767       1488/786408   ( 0.2%)
+texinfos           40/32767       1600/1310680  ( 0.1%)
+faces             219/65535       4380/1310700  ( 0.3%)
+* worldfaces      219/32768          0/0        ( 0.7%)
+clipnodes         176/32767       1408/262136   ( 0.5%)
+leaves             29/32760        812/917280   ( 0.1%)
+* worldleaves      28/8192           0/0        ( 0.3%)
+marksurfaces      280/65535        560/131070   ( 0.4%)
+surfedges        1074/512000      4296/2048000  ( 0.2%)
+edges             538/256000      2152/1024000  ( 0.2%)
+texdata          [variable]        576/33554432 ( 0.0%)
 lightdata        [variable]          0/50331648 ( 0.0%)
 visdata          [variable]          0/8388608  ( 0.0%)
-entdata          [variable]        448/2097152  ( 0.0%)
+entdata          [variable]        457/2097152  ( 0.0%)
 * AllocBlock        1/64             0/0        ( 1.6%)
-3 textures referenced
-=== Total BSP file data space used: 3512 bytes ===
-Wad files required to run the map: "halflife.wad;"
-0.09 seconds elapsed
+13 textures referenced
+=== Total BSP file data space used: 23821 bytes ===
+Wad files required to run the map: "halflife.wad;xeno.wad;"
+0.16 seconds elapsed
 
 -----   END   hlbsp -----
 
@@ -144,8 +147,8 @@ Submit detailed bug reports to (vluzacn@163.com)
 -----  BEGIN  hlvis -----
 Command line: "C:/Program Files/J.A.C.K./halflife/hlvis.exe" "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\apartment\maps\emptyroom" 
 Arguments: "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\apartment\maps\emptyroom" -low 
-   1 portalleafs
-   0 numportals
+  28 portalleafs
+  51 numportals
 
 -= Current hlvis Settings =-
 Name               |  Setting  |  Default
@@ -168,9 +171,9 @@ BasePortalVis:
  (0.00 seconds)
 LeafThread:
  (0.00 seconds)
-average leafs visible: 1
-g_visdatasize:1  compressed from 1
-0.01 seconds elapsed
+average leafs visible: 25
+g_visdatasize:112  compressed from 112
+0.02 seconds elapsed
 
 -----   END   hlvis -----
 
@@ -253,28 +256,28 @@ wall bleeding fix    [                on ] [                on ]
 
 Load Textures:
 Using Wadfile: C:\Program Files (x86)\Steam\steamapps\common\Half-Life\apartment\maps\emptyroom.wa_
-3 textures referenced
+13 textures referenced
 Reading texlights from 'C:\Program Files\J.A.C.K\halflife\lights.rad'
 0 opaque models
 0 opaque faces
-30 faces
-Create Patches : 270 base patches
-5916 square feet [851968.00 square inches]
+219 faces
+Create Patches : 621 base patches
+8781 square feet [1264539.50 square inches]
 1 direct lights and 0 fast direct lights
 1 light styles
 
 FindFacePositions:
- (0.01 seconds)
+ (0.02 seconds)
 BuildFacelights:
- (0.01 seconds)
+ (0.02 seconds)
 BuildVisLeafs:
- (0.00 seconds)
-visibility matrix   :   0.0 megs
+ (0.02 seconds)
+visibility matrix   :   0.1 megs
 MakeScales:
- (0.00 seconds)
-Transfer Lists :       56862 :    56.86k transfers
-       Indices :        1944 :     1.90k bytes
-          Data :      114534 :   111.85k bytes
+ (0.01 seconds)
+Transfer Lists :      144436 :   144.44k transfers
+       Indices :       87636 :    85.58k bytes
+          Data :      290735 :   283.92k bytes
 Bounce 1 GatherLight:
  (0.00 seconds)
 Bounce 2 GatherLight:
@@ -286,7 +289,7 @@ Bounce 4 GatherLight:
 Bounce 5 GatherLight:
  (0.00 seconds)
 Bounce 6 GatherLight:
- (0.00 seconds)
+ (0.02 seconds)
 Bounce 7 GatherLight:
  (0.00 seconds)
 Bounce 8 GatherLight:
@@ -294,10 +297,10 @@ Bounce 8 GatherLight:
 CreateTriangulations:
  (0.00 seconds)
 AddPatchLights:
- (0.01 seconds)
+ (0.02 seconds)
 FinalLightFace:
  (0.00 seconds)
-0.29 seconds elapsed
+0.22 seconds elapsed
 
 -----   END   hlrad -----
 
